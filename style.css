@@ -241,7 +241,7 @@ footer img{
   width: 200px;
   height: 100px;
   bottom: 7px;
-  right: -50px;
+  right: -98px;
   z-index: 1000;
   font-family: 'arial', cursive;
   }
@@ -273,19 +273,23 @@ footer img{
   }
 
   .sublogo{
-    position: absolute;
+    
     color:#090714;
-    font-family: 'Dancing Script', cursive;
-    right: -110px;
-    top: 250px;
-    font-size: 30px;
+    font-family: 'Dancing Script', cursive;   
+    font-size: 25px;
   }
 
 
 @media screen and (max-width: 960px){/*Responsive*/
-  #box, .local, header, .main, body, .video, .map{
-      width: auto;
+  #box, .local, header, body{
+      width: 100vh;
   }
+
+  @media screen and (max-width: 960px){/*Responsive*/
+    .local, .main, .video, .map{
+        width: auto;
+    }
+
   nav ul{
       position: static;
   }
@@ -306,11 +310,11 @@ footer img{
       margin: 5px 10px 0px 0px;
   }
 
-  .products{
+  .services{
       width: auto;
   }
 
-  .products li{
+  .services li{
       text-align: center;
       display: inline-block;
       width: 100%;
@@ -321,53 +325,21 @@ footer img{
       border-radius: 10px; 
   }
 
-  .products h2{
+  .services h2{
       margin: 10px 0;
   }
 
-  .products li > img{
+  .services li > img{
       width: 8em;
   }
   
-  .product-description{
+  .services-description{
       margin: 0 20px 0 20px;
   }
 
-  .product-price{
+  .services-price{
       margin-bottom: 10px;
-  }
-
-  form{
-      width: 80%;
-  }
-
-  .save{
-      width: 100%;
-      margin: 20px auto 0 auto;
   }
   
 }
-
-/*
-.products{
-  width: 960px;
-  margin: 0 auto;
-  padding: 30px;
 }
-.products li{
-  display: inline-block;
-  text-align: center;
-  width: 30%;
-  vertical-align: top;
-  margin: 0 1.5%;
-  padding: 30px 20px; 
-  box-sizing: border-box;
-  border: 2px solid #000000;
-  border-radius: 10px; 
-}
-/*
-main > p{} "every p that is a direct child of the principal, into of block"
-img + p "the only p that stay latter of img"
-img ~ p "all p that stay latter of img, into of block"
-.main p:not(#greate) "all p that not is id=grate, into of block"
-*/
